@@ -46,6 +46,14 @@ form.addEventListener("submit", function (event) {
   const teamCounter = document.getElementById(team + "Count");
   teamCounter.textContent = parseInt(teamCounter.textContent) + 1;
 
+  // Add attendee name to the correct team card
+  const teamNames = document.getElementById(team + "Names");
+
+  const person = document.createElement("span");
+  person.textContent = name;
+
+  teamNames.appendChild(person);
+
   // Personalized greeting
   greeting.innerHTML = `🎉 <strong>Welcome, ${name} from ${teamName}!</strong>`;
   greeting.style.display = "block";
@@ -76,11 +84,6 @@ form.addEventListener("submit", function (event) {
 
     greeting.textContent = `🎉 Attendance Goal Reached! Winning Team: ${winner}`;
   }
-
-  // Add attendee to list
-  const attendee = document.createElement("li");
-  attendee.innerHTML = `<strong>${name}</strong> - ${teamName}`;
-  attendeeList.appendChild(attendee);
 
   // Clear form
   form.reset();

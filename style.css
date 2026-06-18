@@ -245,17 +245,14 @@ button .fas {
 
 /* Attendee List */
 .attendee-list {
-  margin-top: 30px;
-  padding-top: 30px;
+  margin-top: 20px;
+  padding-top: 20px;
   border-top: 2px solid #f1f5f9;
-  text-align: left;
 }
 
 .attendee-list h3 {
-  color: #64748b;
-  font-size: 16px;
-  margin-bottom: 15px;
-  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 #attendeeList {
@@ -265,14 +262,27 @@ button .fas {
 }
 
 #attendeeList li {
-  background: #f8fafc;
-  border-left: 5px solid #0071c5;
-  border-radius: 10px;
-  padding: 14px 18px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #334155;
-  font-weight: 500;
+  padding: 6px 0;
+  margin: 0;
+  font-size: 14px;
+  background: transparent;
+  border: none;
+  color: #475569;
+}
+
+.team-names {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.team-names span {
+  background: none;
+  padding: 0;
 }
 
 /* Messages */
