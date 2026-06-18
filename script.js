@@ -47,7 +47,9 @@ form.addEventListener("submit", function (event) {
   teamCounter.textContent = parseInt(teamCounter.textContent) + 1;
 
   // Personalized greeting
- greeting.innerHTML = `🎉 <strong>Welcome, ${name} from ${teamName}!</strong>`;
+  greeting.innerHTML = `🎉 <strong>Welcome, ${name} from ${teamName}!</strong>`;
+  greeting.style.display = "block";
+  greeting.classList.add("success-message");
 
   // Add attendee to list (if the HTML exists)
   if (attendeeList) {
